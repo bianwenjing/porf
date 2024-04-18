@@ -133,7 +133,7 @@
 			correspondences, it enables achieving sub-pixel accuracy in the process.
 		</p>
 
-		<h2>Results</h2>
+		<h2>Ablation Study</h2>
 
 		<!-- <h2>Improving surface reconstruction</h2> -->
 		<p style="text-align: justify;">
@@ -160,11 +160,24 @@
 		<img src="image/curve.png" class='center' , style="width:700px;">
 
 
+		<h2>Quantitative comparison</h2>
+
+		<!-- <h3>3D Reconstruction</h3> -->
+
+		<img src="image/reconstruction.png" class='center' , style="width:800px;">
+
+		
+		<h2>Nerfstudio</h2>
+
 		<p style="text-align: justify;">
-			We integrate the proposed PoRF into Nerfstudio library, i.e., we replace the pose optimisation module in the Nerfacto 
+			We integrate the proposed PoRF into <a
+			href="https://docs.nerf.studio/">Nerfstudio</a>, i.e., we replace the pose optimisation module in the Nerfacto 
 			with our proposed PoRF MLP. The following table shows novel view rendering results on the Nerfstudio dataset.
+			Note that we do not use the proposed loss function here.
 		</p>
-		<img src="image/nvs_table_no_caption.png" class='center' , style="width:900px;">
+		<img src="image/nvs_table_no_caption.png" class='center' , style="width:800px;">
+
+
 
 
 		<h2>Qualitative comparison</h2>
